@@ -7,11 +7,11 @@ I containerized the classic open-source 2048 game using Docker and Nginx to crea
 **Live Demo**
 
 The application is deployed publicly and can be accessed through the Render deployment link.
-[https://two048-docker-deployment.onrender.com/
-](url)
+https://two048-docker-deployment.onrender.com/
+
  **Screenshot**
 
-[https://github.com/Ashichauhan98/2048-docker-deployment/blob/main/screenshot.png ](url)
+https://github.com/Ashichauhan98/2048-docker-deployment/blob/main/screenshot.png 
 
 **Tech Stack**
 
@@ -61,7 +61,7 @@ docker compose up -d
 
 Open your browser and visit:
 
-[http://localhost:8080](url)
+http://localhost:8080
 
 **Features**
 
