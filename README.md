@@ -106,7 +106,7 @@ http://localhost:8080
 
 
 
-!\[2048 Game Running in Docker](Screenshot.png)
+!\[2048 Game Running in Docker](screenshot.png)
 
 
 
