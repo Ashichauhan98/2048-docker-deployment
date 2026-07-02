@@ -1,154 +1,96 @@
-\# Dockerized 2048 Game Deployment
+ **Dockerized 2048 Game Deployment**
 
+This project demonstrates how a simple web application can be packaged and deployed using Docker.
 
+I containerized the classic open-source 2048 game using Docker and Nginx to create a lightweight, portable, and reproducible deployment environment. The application runs inside a Docker container and can be accessed locally through a web browser or deployed to cloud platforms that support Docker containers.
 
-A Dockerized deployment of the classic 2048 game using Docker, Nginx, and Docker Compose.
+**Live Demo**
 
+The application is deployed publicly and can be accessed through the Render deployment link.
+[https://two048-docker-deployment.onrender.com/
+](url)
+ **Screenshot**
 
+[https://github.com/Ashichauhan98/2048-docker-deployment/blob/main/screenshot.png ](url)
 
-\## Technologies Used
+**Tech Stack**
 
+* Docker
+* Docker Compose
+* Nginx
+* HTML
+* CSS
+* JavaScript
+* Git
+* GitHub
+* Render
 
-
-\* Docker
-
-\* Docker Compose
-
-\* Nginx
-
-\* HTML
-
-\* CSS
-
-\* JavaScript
-
-
-
-\## Project Structure
-
-
+**Project Structure**
 
 ```text
-
 2048-docker-deployment/
-
 ├── Dockerfile
-
 ├── docker-compose.yml
-
 ├── .dockerignore
-
+├── README.md
+├── screenshot.png
 ├── index.html
-
 ├── js/
-
 ├── style/
-
 └── meta/
-
 ```
 
+**Running the Application Locally**
 
+# Build the Docker image
 
-\## Build the Docker Image
-
-
-
-```bash
 
 docker build -t 2048-game .
 
-```
-
-
-
-\## Run the Container
-
-
-
-```bash
+# Start the container
 
 docker run -d -p 8080:80 --name 2048-container 2048-game
 
-```
 
+Or use Docker Compose:
 
-
-Or using Docker Compose:
-
-
-
-```bash
 
 docker compose up -d
 
-```
+# Access the application
 
+Open your browser and visit:
 
+[http://localhost:8080](url)
 
-\## Access the Application
+**Features**
 
+* Dockerized deployment of a static web application
+* Lightweight Nginx web server
+* Docker Compose support
+* Simple and reproducible deployment process
+* Ready for cloud deployment using Docker-compatible platforms
 
+# What I Learned
 
-Open:
+Through this project I gained practical experience with:
 
+* Creating Docker images using Dockerfiles
+* Managing Docker containers
+* Port mapping between containers and the host machine
+* Serving static content using Nginx
+* Using Docker Compose for application management
+* Deploying Docker applications to cloud platforms
 
+# Future Improvements
 
-```text
+* Add CI/CD using GitHub Actions
+* Publish Docker images to Docker Hub
+* Deploy using Kubernetes
+* Implement automated deployments
 
-http://localhost:8080
+## Credits
 
-```
+The original 2048 game was created by Gabriele Cirulli and is distributed under the MIT License.
 
-
-
-\## Screenshot
-
-
-
-!\[2048 Game Running in Docker](https://github.com/Ashichauhan98/2048-docker-deployment/blob/main/screenshot.png)
-
-
-
-\## Features
-
-
-
-\* Containerized deployment using Docker
-
-\* Lightweight Nginx web server
-
-\* Docker Compose support
-
-\* Portable and reproducible environment
-
-
-
-\## Learning Outcomes
-
-
-
-\* Docker image creation
-
-\* Container lifecycle management
-
-\* Port mapping
-
-\* Docker Compose
-
-\* Static application deployment using Nginx
-
-
-
-\## Credits
-
-
-
-Original 2048 game created by Gabriele Cirulli and licensed under the MIT License.
-
-
-
-This repository demonstrates Docker containerization and deployment of the application using Docker and Nginx.
-
-
-
+This repository focuses on demonstrating containerization and deployment practices using Docker and modern DevOps tools.
